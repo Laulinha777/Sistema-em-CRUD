@@ -1,0 +1,186 @@
+/* Fontes */
+.poppins-regular {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* Reset e estilos gerais */
+* {
+    padding: 6px;
+    box-sizing: border-box;
+    margin: 10px;
+    align-items: center;
+    justify-items: center;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+}
+
+/* Body */
+body {
+    background-color: rgb(138, 138, 190);
+}
+
+/* Flexbox */
+.flex {
+    display: flex;
+}
+
+/* Header */
+header {
+    justify-content: space-between;
+    padding: 0%;
+    display: flex;
+}
+
+header a:hover {
+    transform: scale(1.05);
+    transition: 0.8s;
+    color: black;
+}
+
+/* Menu de Alteração */
+.menu-alterar {
+    list-style-type: none; /* Remove marcadores */
+    padding: 10px; /* Remove padding padrão */
+    margin: 0; /* Remove margin padrão */
+    display: flex;  
+    margin-top: 45px;
+}
+
+.menu-alterar a {
+    font-size: 16px;
+    color: aliceblue;
+    text-decoration: none;
+}
+
+.menu-alterar li {
+    margin-right: 80px;
+    margin-top: -70px;
+}
+
+/* Imagem de Alteração */
+.image-alterar img {
+    max-width: 450px;
+}
+
+/* Container */
+.container {
+    display: flex;
+    background-color: aliceblue;
+    padding: 20px;
+    border-radius: 5%;
+    box-shadow: 4px 1px 1px rgb(96, 92, 92);
+}
+
+/* Formulário de Alteração */
+.form-alterar input {
+    padding: 5px 30px;
+    margin-left: 120px;
+}
+
+.form-alterar h1 {
+    font-size: 24px;
+    color: rgb(138, 138, 190);
+}
+
+/* Botão de Duvida */
+.btt-duvida {
+    margin-top: -20px;
+}
+
+.btt-duvida button { 
+    background-color: aliceblue;
+    border-radius: 20px;
+    border: none;
+    font-size: 16px;
+    padding: 10px 20px;
+    color: rgb(138, 138, 190);
+    cursor: pointer;
+    font-weight: 600;
+}
+  
+.btt-duvida button:hover {
+    transform: scale(1.05);
+    transition: 0.5s;
+}
+
+.dados{
+    background-color: white;
+    border-radius: 8%;
+    justify-items: flex-start;
+    font-size: 15px;
+}
+
+.dados strong{
+    color: rgb(138, 138, 190);
+}
+
+.dados h2{
+    font-size: 20px;
+    margin-left: 20%;
+}
+
+/* Responsividade: ajustes para telas pequenas */
+
+/* Para dispositivos de até 768px (tablets e telas médias) */
+@media (max-width: 768px) {
+    /* Ajuste no header - organiza os itens verticalmente */
+    header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /* Menu - itens organizados em coluna */
+    .menu-alterar {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 20px;
+    }
+
+    .menu-alterar li {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+    /* Container - ajusta a largura */
+    .container {
+        flex-direction: column;
+        align-items: center;
+        width: 90%;
+    }
+
+    /* Ajuste do botão */
+    .btt-duvida button {
+        width: 100%;
+        padding: 12px;
+    }
+
+    /* Ajuste do título */
+    .form-alterar h1 {
+        font-size: 20px;
+        text-align: center;
+    }
+
+    /* Imagens - largura 100% */
+    .image-alterar img {
+        max-width: 100%;
+        margin-top: 20px;
+    }
+
+    /* Ajustes nos inputs */
+    .form-alterar input {
+        width: 100%;
+        margin-left: 0;
+        margin-right: 0;
+    }
+}
+
+/* Para dispositivos de até 480px (celulares e telas menores) */
+@media (max-width: 480px) {
+    /* Ajustes gerais */
+    * {
+        font-size: 14px;
+    }
+}
+    /* Header -*

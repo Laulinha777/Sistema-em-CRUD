@@ -1,0 +1,194 @@
+/* Reset de estilos gerais */
+* {
+    padding: 6px;
+    box-sizing: border-box;
+    margin: 10px;
+    align-items: center;
+    justify-items: center;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    text-decoration: none;
+  }
+  
+  body {
+    background-color: rgb(138, 138, 190);
+    margin: 0; /* Remove a margem do body */
+  }
+  
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  /* Estilos do menu */
+  .menuu {
+    display: flex;
+    padding: 5px;
+    text-decoration: none;
+  }
+  
+  .menuu a {
+    text-decoration: none;
+    font-size: 16px;
+    color: aliceblue;
+  }
+  
+  .menuu li {
+    margin-top: -30px;
+    list-style-type: none;
+    margin-right: 80px;
+  }
+  
+  .butons {
+    margin-top: -30px;
+  }
+  
+  .butons button {
+    background-color: aliceblue;
+    border-radius: 20px;
+    border: none;
+    font-size: 16px;
+    padding: 10px 20px;
+    color: rgb(138, 138, 190);
+    cursor: pointer;
+    font-weight: 600;
+  }
+  
+  .butons button:hover {
+    transform: scale(1.05);
+    transition: 0.5s;
+  }
+  
+  /* Estilos do container */
+  .container {
+    display: flex;
+    background-color: aliceblue;
+    margin-top: 40px;
+    color: rgb(138, 138, 190);
+    border-radius: 8%;
+    box-shadow: 2px 2px 7px black;
+  }
+  
+  .image-cadastro img {
+    max-width: 450px;
+  }
+  
+  .container input {
+    padding: 5px;
+    margin-left: 30px;
+  }
+  
+  /* Responsividade: ajuste para telas pequenas */
+  
+  /* Para dispositivos de até 768px (tablets e telas médias) */
+  @media (max-width: 768px) {
+    /* Ajustes gerais */
+    * {
+      margin: 0;
+      padding: 5px;
+    }
+  
+    /* Header - organiza os itens verticalmente */
+    header {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    /* Menu - itens organizados em coluna */
+    .menuu {
+      flex-direction: column;
+      align-items: center;
+      margin-top: 20px;
+    }
+  
+    .menuu li {
+      margin-right: 0;
+      margin-bottom: 10px;
+    }
+  
+    /* Container - empilha os itens */
+    .container {
+      flex-direction: column;
+      align-items: center;
+      margin-top: 20px;
+    }
+  
+    .image-cadastro img {
+      max-width: 100%;
+      margin-top: 20px;
+    }
+  
+    /* Ajuste do botão */
+    .butons button {
+      width: 100%;
+      padding: 12px;
+      font-size: 14px;
+    }
+  
+    /* Ajuste do título h1 */
+    .container h1 {
+      font-size: 22px;
+    }
+  }
+  
+  /* Para dispositivos de até 480px (celulares e telas menores) */
+  @media (max-width: 480px) {
+    /* Ajustes gerais */
+    * {
+      font-size: 14px;
+    }
+  
+    /* Header - organiza os itens em coluna */
+    header {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    /* Menu - itens centralizados */
+    .menuu {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .menuu li {
+      margin-bottom: 10px;
+    }
+  
+    /* Container - ajusta o layout para ocupar a tela inteira */
+    .container {
+      flex-direction: column;
+      align-items: center;
+      padding: 10px;
+    }
+  
+    .image-cadastro img {
+      max-width: 100%;
+      margin-top: 20px;
+    }
+  
+    /* Ajuste do botão */
+    .butons button {
+      width: 100%;
+      padding: 12px;
+      font-size: 14px;
+    }
+  
+    /* Ajuste do título h1 */
+    .container h1 {
+      font-size: 20px;
+    }
+  
+    /* Ajuste das imagens */
+    .image-cadastro img {
+      max-width: 100%;
+    }
+  
+    /* Container - centralização de conteúdo */
+    .container input {
+      width: 100%;
+      margin-left: 0;
+      margin-right: 0;
+    }
+  }
+  
